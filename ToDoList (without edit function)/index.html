@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css" />
+
+    <title>To-Do List</title>
+</head>
+
+<body>
+    <div class="header">
+        <span>To-Do List</span>
+    </div>
+    <div class="container">
+        <form class="form">
+            <label class="title-label" for="todo-title">Title</label>
+            <input type="text" id="todo-title" placeholder="Title for to-do item" />
+            <label for="description" class="title-label">Description</label>
+            <input type="text" id="todo-description" placeholder="Description for todo-item" />
+            <input type="button" value="Save" class="save-button" onclick="save()" />
+        </form>
+    </div>
+    <div class="container">
+        <table class="todo-table">
+            <thead>
+                <tr>
+                    <td>SNo</td>
+                    <td>Title</td>
+                    <td>Description</td>
+                    <td>Status</td>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                <tr></tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

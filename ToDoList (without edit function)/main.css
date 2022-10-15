@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    background-color: #939393;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #292929;
+}
+
+.header>span {
+    padding-top: 30px;
+    font-weight: bold;
+    color: white;
+    font-size: 40px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+
+.form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 490px;
+    align-items: center;
+
+
+}
+
+#todo-title,
+.title-label, #todo-description {
+    border: none;
+    background-color: #292929;
+    padding: 8px 8px;
+    color: white;
+    display: block;
+    width: 100%;
+
+}
+
+.title-label {
+    font-weight: bold;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px 2px 5px black;
+    margin-top: 20px;
+}
+
+#todo-title, #todo-description {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom: 2px solid white;
+    box-shadow: 0px 2px 5px black;
+}
+
+.save-button {
+    margin-top: 20px;
+    height: 40px;
+    width: 100px;
+    background-color: #292929;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.buttoncont{
+    display: flex;
+    justify-content: center;
+
+}
+
+.todo-table {
+    width: 700px !important;
+    
+    text-align:left;
+    background-color: #292929;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+thead > tr {
+    font-weight: bold;
+    border-bottom: 1px solid gray;
+}
+
+td{
+    padding: 5px;
+}
+
